@@ -8,7 +8,7 @@
 ![Badge](https://marcgrimme.github.io/simplecov-small-badge/badges/coverage_badge_total.svg)
 [![Maintainability](https://api.codeclimate.com/v1/badges/dc015164556e774d3078/maintainability)](https://codeclimate.com/github/nicorithner/Sweater_weather/maintainability)
   
-  <h3>Nico Rithner - 2020</h3>
+  <h3>Nico Rithner - 2021</h3>
 </div>
 
 <h5  align="center">Contact Information</h5>
