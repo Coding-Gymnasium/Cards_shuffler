@@ -1,9 +1,9 @@
 <h1> Discover The Capital Cities Of The World </h1>
 <div class='cardsContainer'>
   <div class='card'>
-    <h2><%= @capitals.first[:capital] %> </h2> 
-    <strong>Capital of:</strong> <%= @capitals.first[:country] %> 
+    <h2><%= @random_capital.first[:capital] %> </h2> 
+    <strong>Capital of:</strong> <%= @random_capital.first[:country] %> 
   </div>
 
-  <button> Click To Discover </button>
+  <%= button_to 'Click To Discover', root_path, method: :get  %>
 </div>
