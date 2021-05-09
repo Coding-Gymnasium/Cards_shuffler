@@ -1,8 +1,9 @@
 <h1> Discover The Capital Cities Of The World </h1>
 <div class='cardsContainer'>
   <div class='card'>
-    <h2><%= @capitals.capital %> </h2> 
-    <h3><%= @capitals.country %> </h3> 
+    <h2><%= @capitals.first[:capital] %> </h2> 
+    <strong>Capital of:</strong> <%= @capitals.first[:country] %> 
   </div>
+
   <button> Click To Discover </button>
 </div>
