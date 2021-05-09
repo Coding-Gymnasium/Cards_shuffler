@@ -1,9 +1,23 @@
 <h1> Discover The Capital Cities Of The World </h1>
+
 <div class='cardsContainer'>
-  <div class='card'>
+  <div class='topCard'>
     <h2><%= @random_capital.first[:capital] %> </h2> 
     <strong>Capital of:</strong> <%= @random_capital.first[:country] %> 
   </div>
+  <hr />
+  <div class='shuffleButton'>
+    <%= link_to 'Shuffle', root_path, method: :get  %>
+  </div>
 
-  <%= button_to 'Click To Discover', root_path, method: :get  %>
+  <div class='cards'>
+    <% @random_capital.each do |capital| %>
+      <div class='card'>
+        <h3><%= capital[:capital] %><h4>
+        <hr />
+        <strong> Capital of: </strong><%= capital[:country] %>
+      </div>
+    <% end %>
+  </div>
 </div>
+

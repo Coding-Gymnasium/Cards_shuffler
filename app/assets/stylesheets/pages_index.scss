@@ -1,0 +1,118 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  font-size: 1.3125rem;
+  line-height: 1.6;
+  background-image: url("abc");
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--clr-primary-400);
+  font-family: var(--ff-accent);
+  font-weight: 900;
+  line-height: 1;
+}
+
+h2,
+h3,
+p {
+  margin-bottom: 1em;
+}
+
+body h1 {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+// --------------------------
+// -------- Cards Container
+// --------------------------
+
+// Hierarchy
+// -- body
+// --- cardsContainer
+// ----- cards
+// ------- card
+
+.cardsContainer {
+  background: silver;
+  padding-top: 1rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.topCard { 
+  min-width: 50%;
+  max-width: 60%;
+  background: white; 
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.topCard:hover, .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card {
+  flex: 1 0 21%;
+  background: pink;
+  margin: 1rem;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+// -------- Button
+
+.shuffleButton {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.shuffleButton a {
+  display: inline-block;
+  min-width: 25%;
+  padding: 1rem;
+  background: hotpink;
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.shuffleButton a:hover { 
+  background: gray;
+}
+
+
