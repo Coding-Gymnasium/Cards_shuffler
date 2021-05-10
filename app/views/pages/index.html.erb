@@ -1,0 +1,12 @@
+<h1>Discover The Capital Cities Of The World</h1>
+
+<div class='cards'>
+    <% @cards.each do |card| %>
+      <div class='card'>
+        <h3><%= card.name %></h3>
+        <p>Capital Of</p>
+        <h4><%= card.country %></h4>
+      </div>
+    <% end %>
+</div>
+
