@@ -32,12 +32,12 @@ belongs_to: deck
 
 #### Deck generation
 
-Create a deck generation method that includes all countries capitals (cards)
+ - [x] Create a deck generation method that includes all countries capitals (cards)
+ - [x] A deck auto generates upon rendering of the page.
 
 ### Issue 2
 
 When a visitor visits the capitals index page:
-- a deck auto generates upon rendering of the page.
 - deck is presented alphabetically the first time.
 - there is shuffle button that uses a deck.shuffle method to shuffle the deck.
 
