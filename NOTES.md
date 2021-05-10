@@ -3,18 +3,19 @@
 ### Capital cities card table
 
 | Column   | Type   |
-| -------- | ------ |
+| :-----:  | :----: |
 | id:      | integer|
 | name:    | string | 
 | country: | string |
 | lat:     | float  |
 | lon:     | float  |
+| deck_id: | integer|
 
 
 ### Capital cities deck table
 
 | Column   | Type   |
-| -------- | ------ |
+| :------: | :----: |
 | id:      | integer|
 
 ### Relations
