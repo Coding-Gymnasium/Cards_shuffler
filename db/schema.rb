@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2021_05_10_160138) do
   create_table "cards", force: :cascade do |t|
     t.string "name"
     t.string "country"
-    t.float "lan"
+    t.float "lat"
     t.float "lon"
     t.bigint "deck_id", null: false
     t.datetime "created_at", precision: 6, null: false

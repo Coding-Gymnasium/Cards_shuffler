@@ -1,3 +1,7 @@
 class PagesController < ApplicationController
-  def index; end
+  def index
+    deck = Deck.create
+    deck.generate_deck(deck.id)
+    @cards = deck.cards
+  end
 end
