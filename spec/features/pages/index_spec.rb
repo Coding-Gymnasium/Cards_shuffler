@@ -10,7 +10,17 @@ RSpec.describe 'Index page features', type: :feature do
     expect(Deck.last.cards.count).to_not eq(0)
   end
 
-  xit 'Deck cards are listed in alphabetical order' do
+  it 'There is a Deck of cards that includes a Capital name and the corresponding country' do
+    visit root_path
+    expect(page).to have_content('Discover The Capital Cities Of The World')
+
+    within(first('.card')) do
+      expect(page).to have_content('Sukhumi')
+      expect(page).to have_content('Abkhazia')
+    end
+  end
+
+  it 'Deck cards are listed in alphabetical order by country' do
   end
 
   xit 'There is shuffle button that when clicked shuffles the cards' do
