@@ -38,6 +38,7 @@ belongs_to: deck
 ### Issue 2
 
 When a visitor visits the capitals index page:
-- deck is presented alphabetically the first time.
-- there is shuffle button that uses a deck.shuffle method to shuffle the deck.
+- [ ] There is deck of Capital cities names cards that includes the country it belongs to.
+- [ ] deck is presented alphabetically the first time.
+- [ ] there is shuffle button that uses a deck.shuffle method to shuffle the deck.
 
