@@ -1,5 +1,7 @@
 <h1>Discover The Capital Cities Of The World</h1>
 
+<%= button_to 'Shuffle', root_path, method: :get %>
+
 <div class='cards'>
     <% @cards.each do |card| %>
       <div class='card'>

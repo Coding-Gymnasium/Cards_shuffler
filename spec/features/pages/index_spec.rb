@@ -25,7 +25,10 @@ RSpec.describe 'Index page features', type: :feature do
     end
   end
 
-  xit 'There is shuffle button that when clicked shuffles the cards' do
+  it 'There is shuffle button that when clicked shuffles the cards' do
+    visit root_path
+
+    expect(page).to have_button('Shuffle')
   end
 end
 
