@@ -5,3 +5,4 @@ class PagesController < ApplicationController
     @cards = deck.cards
   end
 end
+

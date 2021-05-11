@@ -10,3 +10,4 @@ class Deck < ApplicationRecord
     end
   end
 end
+
