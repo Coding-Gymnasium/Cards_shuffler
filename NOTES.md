@@ -40,6 +40,6 @@ belongs_to: deck
 When a visitor visits the capitals index page:
 - [x] There is deck of Capital cities names cards that includes the country it belongs to.
 - [x] deck is presented alphabetically the first time.
-- [ ] there is shuffle button in the page that when clicked shuffles the deck.
-- [ ] When the page is refreshed the deck is back to displaying in alphabetical order
+- [x] there is shuffle button in the page that when clicked shuffles the deck.
+- [x] When the page is refreshed the deck is back to displaying in alphabetical order
 
