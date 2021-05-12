@@ -9,6 +9,8 @@
 | country: | string |
 | lat:     | float  |
 | lon:     | float  |
+| map_s:   | text   |
+| map_l:   | text   |
 | deck_id: | integer|
 
 
@@ -43,3 +45,6 @@ When a visitor visits the capitals index page:
 - [x] there is shuffle button in the page that when clicked shuffles the deck.
 - [x] When the page is refreshed the deck is back to displaying in alphabetical order
 
+### Issue 3
+
+- [ ] A card has a static map of the capital city

@@ -8,9 +8,13 @@
 <div id='cards'>
   <% @cards.each do |card| %>
       <div class='card'>
-        <h3><%= card.name %></h3>
-        <p>Capital Of</p>
-        <h4><%= card.country %></h4>
+        <figure>
+          <%= image_tag(card.map_s, :size => '250x250') %>
+          <figcaption>
+            <h3><%= card.name %></h3>
+            <p>Capital Of: <%= card.country %></p>
+          </figcaption>
+        </figure>
       </div>
   <% end %>
 </div>
