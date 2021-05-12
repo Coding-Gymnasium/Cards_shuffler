@@ -1,6 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe 'Index page features', type: :feature do
+  before :each do
+    stub_request(:get, 'www.example.com').to_return(body: 'abc')
+  end
+
   it 'Visiting the index page creates a deck of cards' do
     expect { visit root_path }.to change { Deck.count }.by(1)
   end
