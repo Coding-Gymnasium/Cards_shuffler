@@ -23,8 +23,7 @@ ActiveRecord::Schema.define(version: 2021_05_12_000608) do
     t.bigint "deck_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.text "map_s"
-    t.text "map_l"
+    t.text "map"
     t.index ["deck_id"], name: "index_cards_on_deck_id"
   end
 
