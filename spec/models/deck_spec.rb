@@ -6,10 +6,12 @@ RSpec.describe Deck, type: :model do
   end
 
   describe 'Instance Methods' do
-    it '#generate_deck' do
+    it '#generate_countries_deck' do
+      VCR.use_cassette('get_countries') do
       deck = Deck.create
-      deck.generate_deck
+      deck.generate_countries_deck
       expect(deck.cards.count).to_not eq(0)
+      end
     end
   end
 end
