@@ -1,7 +1,8 @@
 require 'csv'
 
 class Deck < ApplicationRecord
-  has_many :cards
+  has_many :deck_cards, dependent: :destroy
+  has_many :cards, through: :deck_cards
 
   def generate_deck
     data = CSV.read('lib/assets/data/capitals.csv')
