@@ -56,3 +56,48 @@ When a visitor visits the capitals index page:
 - [x] Once loaded the featured card is the first card in the deck
 - [x] Clicking shuffle also updates the featured card
 - [x] Clicking directly on a card displays it as a featured card
+
+#### Issue 5
+
+##### Change source for countries data
+
+Switching to an api versus the csv file. The file has some bad data and the latitude and longitude are not always correct.
+
+- [x] Create a countries service
+
+#### Issue 6
+
+##### Change country card display and table
+
+- [ ] Update card model validations
+- [ ] Change the card display in the home page to display the country flag instead of the map
+- [ ] Add other stats but no map in the index display.
+ 
+#### Issue 7
+
+##### Add weather api
+
+- [ ] Add weather service
+- [ ] Add current weather to card table
+
+#### Issue 8
+
+##### Add images api
+
+- [ ] Create image service
+- [ ] Add images collection to card
+
+#### Issue 9
+
+##### Create card show page
+
+- [ ] it has a map centered on the capital city
+- [ ] it has all the stats  included in the small card
+- [ ] it has images of the country
+- [ ] it has the capital city current weather
+
+#### Issue 10
+
+##### Navigation
+
+- [ ] There is navigation to go back to the home page
