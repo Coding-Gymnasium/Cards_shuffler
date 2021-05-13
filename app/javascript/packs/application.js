@@ -9,6 +9,7 @@ import * as ActiveStorage from '@rails/activestorage'
 import 'channels'
 import 'jquery'
 import 'packs/featuredCard'
+import 'packs/shuffle'
 
 Rails.start()
 Turbolinks.start()
