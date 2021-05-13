@@ -11,11 +11,10 @@ gem 'image_processing', '~> 1.2'
 gem 'jbuilder', '~> 2.7'
 gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
+gem 'redis', '~> 4.0'
 gem 'sass-rails', '>= 6'
 gem 'turbolinks', '~> 5'
 gem 'webpacker', '~> 5.0'
-# Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 4.0'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -24,6 +23,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 5.0', '>= 5.0.1'
   gem 'shoulda-matchers'
   gem 'simplecov'
+  gem 'webmock'
 end
 
 group :development do

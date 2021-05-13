@@ -47,4 +47,12 @@ When a visitor visits the capitals index page:
 
 ### Issue 3
 
-- [ ] A card has a static map of the capital city
+- [x] A card has a static map of the capital city
+
+### Issue 4
+
+- [x] by default a random feature card displays upon page loading
+- [x] There is temporary card showing while the page loads
+- [x] Once loaded the featured card is the first card in the deck
+- [x] Clicking shuffle also updates the featured card
+- [x] Clicking directly on a card displays it as a featured card

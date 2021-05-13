@@ -8,7 +8,7 @@ RSpec.describe Deck, type: :model do
   describe 'Instance Methods' do
     it '#generate_deck' do
       deck = Deck.create
-      deck.generate_deck(deck.id)
+      deck.generate_deck
       expect(deck.cards.count).to_not eq(0)
     end
   end

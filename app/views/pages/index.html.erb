@@ -3,13 +3,24 @@
 
 <h1>Discover The Capital Cities Of The World</h1>
 
-<button type="button" id="shuffle">Shuffle</button>
+<div id='featuredCard'>
+        <figure>
+          <%= image_tag(@cards.shuffle.first.map) %>
+          <figcaption>
+            <h3><%= @cards.shuffle.first.name %></h3>
+            <p>Capital Of: <%= @cards.shuffle.first.country %></p>
+          </figcaption>
+        </figure>
+ </div>
+
+<button type='button' id='shuffle'>Shuffle</button>
 
 <div id='cards'>
+
   <% @cards.each do |card| %>
-      <div class='card'>
+      <div class='card' id='card' onClick="onClick(this)">
         <figure>
-          <%= image_tag(card.map_s, :size => '250x250') %>
+          <%= image_tag(card.map) %>
           <figcaption>
             <h3><%= card.name %></h3>
             <p>Capital Of: <%= card.country %></p>
@@ -20,15 +31,11 @@
 </div>
 
 <script>
-  const cardContainer = document.getElementById("cards")
-  const button = document.getElementById("shuffle")
-                                                                    
-  button.addEventListener("click", (event) => {
-    let cards = document.getElementsByClassName("card")
-                                                                    
-    let shuffled = _.shuffle(cards)
-    cardContainer.innerHTML = ""
-    shuffled.forEach(element => cardContainer.appendChild(element))
-  })
+  function onClick(card) {
+    document.getElementById('featuredCard').replaceChildren(card.cloneNode(true))
+    var mapImage = document.getElementById('featuredCard').getElementsByTagName('img')[0]
+    mapImage.style.height = '600px'
+    mapImage.style.width = '600px'
+  }
 </script>
 
