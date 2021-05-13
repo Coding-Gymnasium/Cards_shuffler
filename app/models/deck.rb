@@ -6,8 +6,8 @@ class Deck < ApplicationRecord
     data = CountriesService.fetch_all
 
     data.each do |row|
-      map = MapService.get_map({ lat: row[:latlng][0], lon: row[:latlng][1] })
-      cards.create!(
+      map = MapService.get_map({ lat: row[:latlng][0], lon: row[:latlng][1] }) if row[:latlng][0] && row[:latlng][1]
+      map && cards.create!(
         name: row[:name],
         capital: row[:capital],
         population: row[:population],
