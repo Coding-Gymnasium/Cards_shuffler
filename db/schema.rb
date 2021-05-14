@@ -23,8 +23,7 @@ ActiveRecord::Schema.define(version: 2021_05_13_164338) do
     t.float "lon"
     t.string "timezones"
     t.string "currencies"
-    t.string "languages", default: [], array: true
-    t.string "string", default: [], array: true
+    t.string "languages"
     t.string "flag"
     t.string "map"
     t.datetime "created_at", precision: 6, null: false
