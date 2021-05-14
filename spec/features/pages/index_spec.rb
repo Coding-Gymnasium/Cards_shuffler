@@ -1,38 +1,46 @@
 require 'rails_helper'
 
 RSpec.describe 'Index page features', type: :feature do
-  before :each do
-    stub_request(:get, 'www.example.com').to_return(body: 'abc')
-  end
-
   it 'Visiting the index page creates a deck of cards' do
-    expect { visit root_path }.to change { Deck.count }.by(1)
+    VCR.use_cassette('get_countries') do
+      expect { visit root_path }.to change { Deck.count }.by(1)
+    end
   end
 
   it 'A deck has cards' do
-    visit root_path
-    expect(Deck.last.cards.count).to_not eq(0)
+    VCR.use_cassette('get_countries') do
+      visit root_path
+      expect(Deck.last.cards.count).to_not eq(0)
+    end
   end
 
   it 'Cards include a Capital and its country and is listed in alphabetical order by country' do
-    visit root_path
-    expect(page).to have_content('Discover The Capital Cities Of The World')
+    VCR.use_cassette('get_countries') do
+      visit root_path
+      expect(page).to have_content('Discover The Capital Cities Of The World')
 
-    within(first('.card')) do
-      expect(page).to have_content('Sukhumi')
-      expect(page).to have_content('Abkhazia')
-    end
+      within(first('.card')) do
+        expect(page).to have_content('Kabul')
+        expect(page).to have_content('Afghanistan')
+        expect(page).to have_content('Population: 27657145')
+        expect(page).to have_content('Currency: Afghan afghani')
+        expect(page).to have_content('Languages: Pashto, Uzbek, Turkmen')
+        expect(page).to have_content('Date & Time:')
+      end
 
-    within all('.card').last do
-      expect(page).to have_content('Harare')
-      expect(page).to have_content('Zimbabwe')
+      within all('.card').last do
+        expect(page).to have_content('Harare')
+        expect(page).to have_content('Zimbabwe')
+      end
     end
   end
 
   it 'There is shuffle button that when clicked shuffles the cards' do
-    visit root_path
+    VCR.use_cassette('get_countries') do
+      visit root_path
 
-    expect(page).to have_button('Shuffle')
+      expect(page).to have_button('Shuffle')
+    end
   end
 end
 

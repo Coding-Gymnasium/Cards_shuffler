@@ -8,7 +8,7 @@ class CreateCards < ActiveRecord::Migration[6.1]
       t.float :lon
       t.string :timezones
       t.string :currencies
-      t.string :languages, :string, array: true, default: []
+      t.string :languages
       t.string :flag
       t.string :map
 

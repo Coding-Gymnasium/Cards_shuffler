@@ -1,14 +1,19 @@
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
-
 <h1>Discover The Capital Cities Of The World</h1>
-
 <div id='featuredCard'>
+  <% featured_card = @cards.shuffle.first %>
         <figure>
-          <%= image_tag(@cards.shuffle.first.map) %>
+          <%= image_tag(featured_card.flag, :size => '250x150') %>
           <figcaption>
-            <h3><%= @cards.shuffle.first.name %></h3>
-            <p>Capital Of: <%= @cards.shuffle.first.country %></p>
+            <h3><%= featured_card.capital %></h3>
+            <ul>
+              <li>Capital Of: <%= featured_card.name %></li>
+              <li>Population: <%= featured_card.population %> </li>
+              <li>Currency: <%= featured_card.currencies %> </li>
+              <li>Languages: <%= featured_card.languages %> </li>
+              <li>Date & Time: <%= featured_card.timezones %> </li>
+            </ul>
           </figcaption>
         </figure>
  </div>
@@ -20,10 +25,16 @@
   <% @cards.each do |card| %>
       <div class='card' id='card' onClick="onClick(this)">
         <figure>
-          <%= image_tag(card.map) %>
+          <%= image_tag(card.flag, :size => '150x100') %>
           <figcaption>
-            <h3><%= card.name %></h3>
-            <p>Capital Of: <%= card.country %></p>
+            <h3><%= card.capital %></h3>
+            <ul>
+              <li>Capital Of: <%= card.name %></li>
+              <li>Population: <%= card.population %> </li>
+              <li>Currency: <%= card.currencies %> </li>
+              <li>Languages: <%= card.languages %></li>
+              <li>Date & Time: <%= card.timezones %> </li>
+            </ul>
           </figcaption>
         </figure>
       </div>
@@ -34,8 +45,8 @@
   function onClick(card) {
     document.getElementById('featuredCard').replaceChildren(card.cloneNode(true))
     var mapImage = document.getElementById('featuredCard').getElementsByTagName('img')[0]
-    mapImage.style.height = '600px'
-    mapImage.style.width = '600px'
+    mapImage.style.height = '30%'
+    mapImage.style.width = '30%'
   }
 </script>
 

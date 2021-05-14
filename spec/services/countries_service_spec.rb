@@ -14,7 +14,6 @@ RSpec.describe CountriesService do
       expect(countries[0][:latlng][1]).to eq(65.0)
       expect(countries[0][:timezones][0]).to eq('UTC+04:30')
       expect(countries[0][:currencies][0][:name]).to eq('Afghan afghani')
-      expect(countries[0][:languages].class).to be_an(Array)
       expect(countries[0][:languages].count).to eq(3)
       expect(countries[0][:languages][0][:name]).to eq('Pashto')
       expect(countries[0][:flag]).to be_a(String)

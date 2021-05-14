@@ -69,25 +69,32 @@ Switching to an api versus the csv file. The file has some bad data and the lati
 
 ##### Change country card display and table
 
-- [ ] Update card model validations
-- [ ] Change the card display in the home page to display the country flag instead of the map
-- [ ] Add other stats but no map in the index display.
+- [x] Update card model validations
+- [x] Create deck_cards join table
+- [x] Update relationships
+- [x] Update tests
+- [x] Update how decks generate cards
  
 #### Issue 7
 
 ##### Add weather api
 
+- [x] Change the card display in the home page to display the country flag instead of the map
+- [x] Add other stats but no map in the index display.
+
+#### Issue 8
+
 - [ ] Add weather service
 - [ ] Add current weather to card table
 
-#### Issue 8
+#### Issue 9
 
 ##### Add images api
 
 - [ ] Create image service
 - [ ] Add images collection to card
 
-#### Issue 9
+#### Issue 10
 
 ##### Create card show page
 
@@ -96,7 +103,7 @@ Switching to an api versus the csv file. The file has some bad data and the lati
 - [ ] it has images of the country
 - [ ] it has the capital city current weather
 
-#### Issue 10
+#### Issue 11
 
 ##### Navigation
 
