@@ -17,6 +17,7 @@ class Deck < ApplicationRecord
         lat: row[:latlng][0],
         lon: row[:latlng][1],
         timezones: current_time(row[:timezones][0]),
+        alpha2Code: row[:alpaha2Code],
         currencies: row[:currencies][0][:name],
         languages: languages(row[:languages]),
         flag: row[:flag],

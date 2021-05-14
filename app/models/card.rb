@@ -1,6 +1,6 @@
 class Card < ApplicationRecord
   has_many :deck_cards
   has_many :decks, through: :deck_cards
-  validates :name, :population, :lat, :lon, :timezones, :alpha2Code, :currencies, :flag, :map, presence: true
-  validates :capital, :languages, presence: true, allow_blank: true
+  validates :name, :population, :lat, :lon, :timezones, :currencies, :flag, :map, presence: true
+  validates :capital, :languages, :alpha2Code, presence: true, allow_blank: true
 end
