@@ -84,8 +84,8 @@ Switching to an api versus the csv file. The file has some bad data and the lati
 
 #### Issue 8
 
-- [ ] Add weather service
-- [ ] Add current weather to card table
+- [x] Add weather service
+- [ ] Create method to dynamically obtain current weather
 
 #### Issue 9
 
