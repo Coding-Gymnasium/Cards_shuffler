@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.openweathermap.org/data/2.5/weather?appid=877f43c6da7c814253de433811a20b9d&q=Oslo,NO&units=imperial
+    uri: https://api.openweathermap.org/data/2.5/weather?appid=WEATHER_API_KEY&q=Oslo,NO&units=imperial
     body:
       encoding: US-ASCII
       string: ''
@@ -21,11 +21,11 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Fri, 14 May 2021 17:40:58 GMT
+      - Sat, 15 May 2021 04:03:13 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '477'
+      - '481'
       Connection:
       - keep-alive
       X-Cache-Key:
@@ -38,7 +38,7 @@ http_interactions:
       - GET, POST
     body:
       encoding: UTF-8
-      string: '{"coord":{"lon":10.7461,"lat":59.9127},"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04d"}],"base":"stations","main":{"temp":62.4,"feels_like":61.63,"temp_min":61,"temp_max":63,"pressure":980,"humidity":70},"visibility":10000,"wind":{"speed":7.78,"deg":60,"gust":18.99},"clouds":{"all":100},"dt":1621013963,"sys":{"type":3,"id":2009047,"country":"NO","sunrise":1620960120,"sunset":1621021493},"timezone":7200,"id":3143244,"name":"Oslo","cod":200}'
-  recorded_at: Fri, 14 May 2021 17:40:58 GMT
+      string: '{"coord":{"lon":10.7461,"lat":59.9127},"weather":[{"id":802,"main":"Clouds","description":"scattered
+        clouds","icon":"03d"}],"base":"stations","main":{"temp":50.16,"feels_like":48.97,"temp_min":48.99,"temp_max":52,"pressure":981,"humidity":87},"visibility":10000,"wind":{"speed":4.14,"deg":25,"gust":15.46},"clouds":{"all":44},"dt":1621051393,"sys":{"type":3,"id":2009047,"country":"NO","sunrise":1621046380,"sunset":1621108034},"timezone":7200,"id":3143244,"name":"Oslo","cod":200}'
+  recorded_at: Sat, 15 May 2021 04:03:13 GMT
 recorded_with: VCR 6.0.0

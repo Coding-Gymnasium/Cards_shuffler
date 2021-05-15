@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.openweathermap.org/data/2.5/weather?appid=877f43c6da7c814253de433811a20b9d&q=Kabul,AF&units=imperial
+    uri: https://api.openweathermap.org/data/2.5/weather?appid=WEATHER_API_KEY&q=Kabul,AF&units=imperial
     body:
       encoding: US-ASCII
       string: ''
@@ -21,11 +21,11 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Fri, 14 May 2021 21:11:46 GMT
+      - Sat, 15 May 2021 04:03:11 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '448'
+      - '455'
       Connection:
       - keep-alive
       X-Cache-Key:
@@ -39,6 +39,6 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"coord":{"lon":69.4167,"lat":34.5},"weather":[{"id":800,"main":"Clear","description":"clear
-        sky","icon":"01n"}],"base":"stations","main":{"temp":59,"feels_like":56.07,"temp_min":59,"temp_max":59,"pressure":1014,"humidity":31},"visibility":10000,"wind":{"speed":2.3,"deg":0},"clouds":{"all":0},"dt":1621026706,"sys":{"type":1,"id":7381,"country":"AF","sunrise":1621038002,"sunset":1621088250},"timezone":16200,"id":1138957,"name":"Kabul","cod":200}'
-  recorded_at: Fri, 14 May 2021 21:11:46 GMT
+        sky","icon":"01d"}],"base":"stations","main":{"temp":62.6,"feels_like":60.15,"temp_min":62.6,"temp_max":62.6,"pressure":1016,"humidity":34},"visibility":10000,"wind":{"speed":4.61,"deg":0},"clouds":{"all":0},"dt":1621051391,"sys":{"type":1,"id":7381,"country":"AF","sunrise":1621038002,"sunset":1621088250},"timezone":16200,"id":1138957,"name":"Kabul","cod":200}'
+  recorded_at: Sat, 15 May 2021 04:03:11 GMT
 recorded_with: VCR 6.0.0
