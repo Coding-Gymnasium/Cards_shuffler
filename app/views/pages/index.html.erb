@@ -14,6 +14,8 @@
               <li>Languages: <%= featured_card.languages %> </li>
               <li>Date & Time: <%= featured_card.timezones %> </li>
             </ul>
+
+            <%= link_to 'Details', card_path(featured_card), method: :get %>
           </figcaption>
         </figure>
  </div>
@@ -35,6 +37,7 @@
               <li>Languages: <%= card.languages %></li>
               <li>Date & Time: <%= card.timezones %> </li>
             </ul>
+            <%= link_to 'Details', card_path(card), method: :get %>
           </figcaption>
         </figure>
       </div>
