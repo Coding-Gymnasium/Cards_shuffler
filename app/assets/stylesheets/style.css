@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Newsreader', serif;
+  font-weight: 400;
+  font-size: 1.3125rem;
+  line-height: 1.6;
+  background: linear-gradient(rgba(247, 247, 247, 0.5), rgba(247, 247, 247, 0.5)), url("map-of-the-world-60526.jpg");
+  background-size: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--clr-primary-400);
+  font-family: var(--ff-accent);
+  font-weight: 900;
+  line-height: 1;
+}
+
+h2,
+h3,
+p {
+  margin-bottom: 1em;
+}
+
+body h1 {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+// --------------------------
+// -------- Cards Container
+// --------------------------
+
+// Hierarchy
+// -- body
+// --- featuredCard
+// --- button
+// --- cardsContainer
+// ----- cards
+// ------- card
+// ------- description
+
+.card img {
+  width: 200px;
+  height: 125px;
+  object-fit: cover;
+}
+
