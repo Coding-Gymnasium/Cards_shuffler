@@ -7,10 +7,10 @@ class CreateCards < ActiveRecord::Migration[6.1]
       t.float :lat
       t.float :lon
       t.string :timezones
+      t.string :alpha2Code
       t.string :currencies
       t.string :languages
       t.string :flag
-      t.string :map
 
       t.timestamps
     end
