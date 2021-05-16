@@ -42,5 +42,17 @@ RSpec.describe 'Index page features', type: :feature do
       expect(page).to have_button('Shuffle')
     end
   end
+
+  xit "When a visitor visits the home page can go to a card's show" do
+    VCR.use_cassette('get_countries') do
+      visit root_path
+
+      within(first('.card')) do
+        expect(page).to have_link('Details')
+        click_link 'Details'
+      end
+      expect(current_path).to eq(card_path(@card))
+    end
+  end
 end
 

@@ -1,0 +1,33 @@
+<h1> <%= @card.name %></h1>
+
+<div class='countryMap'>
+  <h3><%= @card.capital %></h3>
+  <%= image_tag(@card.country_map ) %>
+</div>
+
+<div class='flag'>
+  <%= image_tag(@card.flag, :size => '350x250')%>
+</div>
+
+<div class='stats'>
+  <h3>Country Stats</h3>
+  <ul>Name: <%= @card.name %></ul>
+  <ul>Population: <%= @card.population %></ul>
+  <ul>Currency: <%= @card.currencies %></ul>
+  <ul>Languages: <%= @card.languages %></ul>
+</div>
+
+<div class='capitalWeather'>
+  <h3><%= @card.capital %> Current Weather</h3>
+  <ul>Temperature: <%= @card.capital_weather[:temp] %> F</ul>
+  <ul>Minimum: <%= @card.capital_weather[:temp_min] %> F</ul>
+  <ul>Maximum: <%= @card.capital_weather[:temp_max] %> F</ul>
+  <ul>Humidity: <%= @card.capital_weather[:humidity] %></ul>
+  <ul>Conditions: <%= @card.capital_weather[:conditions] %>. <%= @card.capital_weather[:description] %></ul>
+</div>
+
+<div class='images'>
+  <% @card.random_country_images(@card.name).each do |image| %>
+    <%= image_tag(image) %>
+  <% end %>
+</div>

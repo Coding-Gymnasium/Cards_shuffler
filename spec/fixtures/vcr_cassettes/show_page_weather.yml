@@ -1,0 +1,330 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openweathermap.org/data/2.5/weather?appid=WEATHER_API_KEY&q=Kabul,AF&units=imperial
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Sun, 16 May 2021 14:30:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '457'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/weather?q=kabul%2caf&units=imperial"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":69.4167,"lat":34.5},"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"base":"stations","main":{"temp":59,"feels_like":57.56,"temp_min":59,"temp_max":59,"pressure":1020,"humidity":63},"visibility":10000,"wind":{"speed":3.44,"deg":340},"clouds":{"all":75},"dt":1621175401,"sys":{"type":1,"id":7381,"country":"AF","sunrise":1621124359,"sunset":1621174697},"timezone":16200,"id":1138957,"name":"Kabul","cod":200}'
+  recorded_at: Sun, 16 May 2021 14:30:35 GMT
+- request:
+    method: get
+    uri: https://api.openweathermap.org/data/2.5/weather?appid=WEATHER_API_KEY&q=Kabul,AF&units=imperial
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Sun, 16 May 2021 14:30:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '457'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/weather?q=kabul%2caf&units=imperial"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":69.4167,"lat":34.5},"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"base":"stations","main":{"temp":59,"feels_like":57.56,"temp_min":59,"temp_max":59,"pressure":1020,"humidity":63},"visibility":10000,"wind":{"speed":3.44,"deg":340},"clouds":{"all":75},"dt":1621175401,"sys":{"type":1,"id":7381,"country":"AF","sunrise":1621124359,"sunset":1621174697},"timezone":16200,"id":1138957,"name":"Kabul","cod":200}'
+  recorded_at: Sun, 16 May 2021 14:30:35 GMT
+- request:
+    method: get
+    uri: https://api.openweathermap.org/data/2.5/weather?appid=WEATHER_API_KEY&q=Kabul,AF&units=imperial
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Sun, 16 May 2021 14:30:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '457'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/weather?q=kabul%2caf&units=imperial"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":69.4167,"lat":34.5},"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"base":"stations","main":{"temp":59,"feels_like":57.56,"temp_min":59,"temp_max":59,"pressure":1020,"humidity":63},"visibility":10000,"wind":{"speed":3.44,"deg":340},"clouds":{"all":75},"dt":1621175401,"sys":{"type":1,"id":7381,"country":"AF","sunrise":1621124359,"sunset":1621174697},"timezone":16200,"id":1138957,"name":"Kabul","cod":200}'
+  recorded_at: Sun, 16 May 2021 14:30:36 GMT
+- request:
+    method: get
+    uri: https://api.openweathermap.org/data/2.5/weather?appid=WEATHER_API_KEY&q=Kabul,AF&units=imperial
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Sun, 16 May 2021 14:30:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '457'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/weather?q=kabul%2caf&units=imperial"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":69.4167,"lat":34.5},"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"base":"stations","main":{"temp":59,"feels_like":57.56,"temp_min":59,"temp_max":59,"pressure":1020,"humidity":63},"visibility":10000,"wind":{"speed":3.44,"deg":340},"clouds":{"all":75},"dt":1621175401,"sys":{"type":1,"id":7381,"country":"AF","sunrise":1621124359,"sunset":1621174697},"timezone":16200,"id":1138957,"name":"Kabul","cod":200}'
+  recorded_at: Sun, 16 May 2021 14:30:36 GMT
+- request:
+    method: get
+    uri: https://api.openweathermap.org/data/2.5/weather?appid=WEATHER_API_KEY&q=Kabul,AF&units=imperial
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Sun, 16 May 2021 14:30:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '457'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/weather?q=kabul%2caf&units=imperial"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":69.4167,"lat":34.5},"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"base":"stations","main":{"temp":59,"feels_like":57.56,"temp_min":59,"temp_max":59,"pressure":1020,"humidity":63},"visibility":10000,"wind":{"speed":3.44,"deg":340},"clouds":{"all":75},"dt":1621175436,"sys":{"type":1,"id":7381,"country":"AF","sunrise":1621124359,"sunset":1621174697},"timezone":16200,"id":1138957,"name":"Kabul","cod":200}'
+  recorded_at: Sun, 16 May 2021 14:30:36 GMT
+- request:
+    method: get
+    uri: https://api.openweathermap.org/data/2.5/weather?appid=WEATHER_API_KEY&q=Kabul,AF&units=imperial
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Sun, 16 May 2021 14:30:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '457'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/weather?q=kabul%2caf&units=imperial"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":69.4167,"lat":34.5},"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"base":"stations","main":{"temp":59,"feels_like":57.56,"temp_min":59,"temp_max":59,"pressure":1020,"humidity":63},"visibility":10000,"wind":{"speed":3.44,"deg":340},"clouds":{"all":75},"dt":1621175436,"sys":{"type":1,"id":7381,"country":"AF","sunrise":1621124359,"sunset":1621174697},"timezone":16200,"id":1138957,"name":"Kabul","cod":200}'
+  recorded_at: Sun, 16 May 2021 14:30:37 GMT
+- request:
+    method: get
+    uri: https://pixabay.com/api/?category=travel&image_type=photo&key=IMAGE_API_KEY&order=popular&orientation=horizontal&q=Afghanistan
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 16 May 2021 14:30:37 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept, Accept-Language, Cookie
+      - Accept-Encoding
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Max-Age:
+      - '86400'
+      X-Ratelimit-Remaining:
+      - '4994'
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Reset:
+      - '0.3147262379929826'
+      Allow:
+      - POST, OPTIONS, GET
+      Content-Security-Policy:
+      - frame-ancestors none
+      X-Frame-Options:
+      - DENY
+      Content-Language:
+      - en
+      Set-Cookie:
+      - __cf_bm=bc4b926c3f45614706b109ef9bfba1dacf131adc-1621175437-1800-AW7LAtVIttDE9M+WgEMjYbPnF2Wv/BDa+DLp7qYEOISW8Txp9oE3hZ2FLZ3TGWm8E1p3dMKWC7+2NEZhjo3znpI=;
+        path=/; expires=Sun, 16-May-21 15:00:37 GMT; domain=.pixabay.com; HttpOnly;
+        Secure; SameSite=None
+      - anonymous_user_id=006b49c2-5d26-48e9-b4bc-b3e4e4191107; Path=/
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, HEAD
+      Access-Control-Expose-Headers:
+      - X-RateLimit-Limit,X-RateLimit-Remaining,X-RateLimit-Reset
+      Cf-Cache-Status:
+      - MISS
+      Cf-Request-Id:
+      - 0a172f20330000273a6eb5c000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 65054e138dde273a-DEN
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"total":7,"totalHits":7,"hits":[{"id":1030358,"pageURL":"https://pixabay.com/photos/map-afghanistan-atlas-middle-east-1030358/","type":"photo","tags":"map,
+        afghanistan, atlas","previewURL":"https://cdn.pixabay.com/photo/2015/11/07/01/45/map-1030358_150.jpg","previewWidth":150,"previewHeight":99,"webformatURL":"https://pixabay.com/get/gd5156430089fdb84d7fe10c929460aa6da8051d9544f64e902779ee5405f9ba6bb4e3dab12b54ad95c085e7ea709b2cde68db2b945866192a94de2595207da50_640.jpg","webformatWidth":640,"webformatHeight":425,"largeImageURL":"https://pixabay.com/get/g029cb277e3330c2e5bc44baf330e5ab3c0ad6b4f1bcbab02e035f7a98444bba9af7125b0bea4834e60e3a4d05061f73d9d0e1980acaa6f1caa35cd3902d382af_1280.jpg","imageWidth":6016,"imageHeight":4000,"imageSize":3840825,"views":9185,"downloads":4432,"favorites":21,"likes":22,"comments":7,"user_id":427626,"user":"ErikaWittlieb","userImageURL":"https://cdn.pixabay.com/user/2017/03/15/03-09-43-465_250x250.jpg"},{"id":86569,"pageURL":"https://pixabay.com/photos/afghanistan-landscape-sun-sunset-86569/","type":"photo","tags":"afghanistan,
+        landscape, sun","previewURL":"https://cdn.pixabay.com/photo/2013/02/27/13/54/afghanistan-86569_150.jpg","previewWidth":150,"previewHeight":99,"webformatURL":"https://pixabay.com/get/gaee9eb1eecc9392c7a5a3a6af70ca4e56e89bd6823e243eb34d81778322b381351234c55de70eb3c7ce36cabca65e110_640.jpg","webformatWidth":640,"webformatHeight":423,"largeImageURL":"https://pixabay.com/get/gfb8af85d763c567de778449f3349efc0261e027152d8f49ce7ef8bb724abfe1fdd6c30d2d6a7db6042de67413f4839a7_1280.jpg","imageWidth":4928,"imageHeight":3264,"imageSize":1292879,"views":3034,"downloads":817,"favorites":15,"likes":13,"comments":4,"user_id":12019,"user":"12019","userImageURL":""},{"id":60689,"pageURL":"https://pixabay.com/photos/landscape-mountains-hills-60689/","type":"photo","tags":"landscape,
+        mountains, hills","previewURL":"https://cdn.pixabay.com/photo/2012/10/10/16/39/landscape-60689_150.jpg","previewWidth":150,"previewHeight":99,"webformatURL":"https://pixabay.com/get/g265e1ff52dd346cd832c0d2bdae4110f8dd7239aee286be37e1fa131ee6e1eafa506c524220b24c222824bef58f4b1c3_640.jpg","webformatWidth":640,"webformatHeight":426,"largeImageURL":"https://pixabay.com/get/gd1b11081097112fafdebae3d1b2266a8ff75c1e54d90404db4379c7a15d9e835c123aaa2bd32da9381de7c9af11d6fe4_1280.jpg","imageWidth":5616,"imageHeight":3744,"imageSize":4765751,"views":4136,"downloads":520,"favorites":2,"likes":6,"comments":1,"user_id":10439,"user":"ArmyAmber","userImageURL":"https://cdn.pixabay.com/user/2014/10/24/16-00-08-107_250x250.jpg"},{"id":4762075,"pageURL":"https://pixabay.com/photos/photo-manipulation-swimming-4762075/","type":"photo","tags":"photo
+        manipulation, swimming, ali mosavi sam","previewURL":"https://cdn.pixabay.com/photo/2020/01/13/10/27/photo-manipulation-4762075_150.jpg","previewWidth":150,"previewHeight":123,"webformatURL":"https://pixabay.com/get/g929740c92a402471f0528cba421689f9884e28ae215b778fdfa9e7ff20ac76021e76e8acb95b90d81f2725419dcf23b6278774803b77e97c9036fdc51035a99c_640.jpg","webformatWidth":640,"webformatHeight":526,"largeImageURL":"https://pixabay.com/get/g7065a198e27afcc0374901551f90701b6aff6f2e768544ee9b21de31f386097837dc5efe12e805786a6948a305c9ce064935ca890fc1870b7c2a1c3b30ac4547_1280.jpg","imageWidth":4375,"imageHeight":3597,"imageSize":3904723,"views":1420,"downloads":790,"favorites":1,"likes":6,"comments":4,"user_id":14664483,"user":"alimosavisam","userImageURL":"https://cdn.pixabay.com/user/2019/12/18/09-27-55-312_250x250.jpg"},{"id":5270099,"pageURL":"https://pixabay.com/photos/uzbekistan-globe-kazakhstan-travel-5270099/","type":"photo","tags":"uzbekistan,
+        globe, kazakhstan","previewURL":"https://cdn.pixabay.com/photo/2020/06/07/12/03/uzbekistan-5270099_150.jpg","previewWidth":150,"previewHeight":100,"webformatURL":"https://pixabay.com/get/g6493aa6ce882d6550facb05dc294e78f2c7cc60d142318a519870549f3f16a0483de4fea6b92e426a76ca6e2d1614339b8978189bdb71764538d5267fbdfe4c1_640.jpg","webformatWidth":640,"webformatHeight":427,"largeImageURL":"https://pixabay.com/get/g361beb2c7af2f3fb70893808717a8ab262664939d87734ab4374daea34e2b7920cad2559fc5cdd3e22f7d646442d21a2883c5b1d3ba8f7e42f5ad98e5965ece2_1280.jpg","imageWidth":6000,"imageHeight":4000,"imageSize":4972650,"views":968,"downloads":500,"favorites":1,"likes":9,"comments":0,"user_id":16766943,"user":"picknicker54","userImageURL":""},{"id":5166422,"pageURL":"https://pixabay.com/photos/old-man-village-man-old-india-5166422/","type":"photo","tags":"old
+        man, village, man","previewURL":"https://cdn.pixabay.com/photo/2020/05/13/08/17/old-man-5166422_150.jpg","previewWidth":150,"previewHeight":100,"webformatURL":"https://pixabay.com/get/g0659fccd4dbcf1232795d069db17b2f9f36b3b64901ff78ec039ff80e61f176246d54b21a34434f99c5dfad620ad618e9ffcbd1ee55e76e253779f844bcddfa3_640.jpg","webformatWidth":640,"webformatHeight":427,"largeImageURL":"https://pixabay.com/get/ga27d9a55dae7f9e1f91542fa421d3d655a5e229af5e7563685781fca8f4d752f7c4a2b7bd9b49c0f6eb01ffc329b41ce9cbf20250e2acdb3d081a2447b0380d5_1280.jpg","imageWidth":5184,"imageHeight":3456,"imageSize":5718543,"views":740,"downloads":468,"favorites":2,"likes":3,"comments":0,"user_id":12827898,"user":"yogendras31","userImageURL":"https://cdn.pixabay.com/user/2019/06/20/09-05-38-796_250x250.jpg"},{"id":4615155,"pageURL":"https://pixabay.com/photos/afghanistan-operation-silhouette-4615155/","type":"photo","tags":"afghanistan,
+        operation, silhouette","previewURL":"https://cdn.pixabay.com/photo/2019/11/10/07/59/afghanistan-4615155_150.jpg","previewWidth":150,"previewHeight":99,"webformatURL":"https://pixabay.com/get/gde8e1ff60fecb76443eb6509f10a49b298a48fb8a8e817072b449829ee0091049deb06605799b94e9adbde4c5389bcffd7f3074db5c6230958cb1ff271894e93_640.jpg","webformatWidth":640,"webformatHeight":426,"largeImageURL":"https://pixabay.com/get/g64571ae5eb0256367a487a6b84c313db81439e444a97e91b730f999126eeeb4a128a97e5ed36d4ddb113964b3bacbc53ffde1172bc6142d090c7016e420c58a6_1280.jpg","imageWidth":5547,"imageHeight":3698,"imageSize":2852896,"views":425,"downloads":259,"favorites":3,"likes":3,"comments":0,"user_id":13865518,"user":"kingmaphotos","userImageURL":"https://cdn.pixabay.com/user/2019/10/07/15-09-31-366_250x250.jpg"}]}'
+  recorded_at: Sun, 16 May 2021 14:30:37 GMT
+recorded_with: VCR 6.0.0

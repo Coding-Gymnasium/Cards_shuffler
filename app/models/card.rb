@@ -2,8 +2,12 @@ class Card < ApplicationRecord
 
   has_many :deck_cards
   has_many :decks, through: :deck_cards
-  validates :name, :population, :lat, :lon, :timezones, :currencies, :flag, :map, presence: true
+  validates :name, :population, :lat, :lon, :timezones, :currencies, :flag, presence: true
   validates :capital, :languages, :alpha2Code, presence: true, allow_blank: true
+
+  def country_map
+    MapService.get_map({lat: lat, lon: lon}) if lat && lon
+  end
 
   def capital_weather
     weather = WeatherService.get_weather(capital, alpha2Code)
@@ -17,4 +21,9 @@ class Card < ApplicationRecord
       conditions: weather[:weather][0][:main]
     }
   end
+
+  def random_country_images(country)
+    ImagesService.get_images(country)[:images].map { |image| image[:largeImageURL] }
+  end
 end
+
