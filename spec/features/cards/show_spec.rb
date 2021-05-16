@@ -15,37 +15,25 @@ RSpec.describe 'Cards Show Page Features' do
       map: 'https://www.mapquestapi.com/staticmap/v5/map?key=g...',
       alpha2Code: 'AF'
     )
+
+    VCR.use_cassette('show_page_weather') do
+      visit card_path(@card)
+    end
   end
 
   describe 'Country Stats & Features' do
-
-    it "When a visitor visits the home page can go to a card's show" do
-      visit root_path
-
-      within(first('.card')) do
-        click_button 'details'
-      end
-      expect(current_path).to eq(card_path)
-    end
-
-    it 'It has the country name in H1' do
-      visit card_path
-
-      expect(page).to have_css(h1)
+    it 'It has the country name' do
       expect(page).to have_content("#{@card.name}")
     end
 
-    it 'It  has a map of the city' do
-      visit card_path
-      within('.map') do
+    it 'It  has a map of the country' do
+      within('.countryMap') do
         expect(page).to have_content("#{@card.capital}")
       end
     end
 
     it 'It has a list of the country stats' do
-      visit card_path
-
-      within('.stats') do 
+      within('.stats') do
         expect(page).to have_content('Country Stats')
         expect(page).to have_content('Name: Afghanistan')
         expect(page).to have_content('Population: 27657145')
@@ -58,8 +46,15 @@ RSpec.describe 'Cards Show Page Features' do
     end
 
     it 'It has the capital city weather' do
+      within('.capitalWeather') do
+        expect(page).to have_content('Kabul Current Weather')
+        expect(page).to have_content('Temperature')
+        expect(page).to have_content('Minimum')
+        expect(page).to have_content('Maximum')
+        expect(page).to have_content('Humidity')
+        expect(page).to have_content('Conditions')
+      end
     end
-
   end
 end
 
