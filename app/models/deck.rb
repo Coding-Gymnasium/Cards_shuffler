@@ -9,8 +9,6 @@ class Deck < ApplicationRecord
 
   def create_cards(data)
     data.each do |row|
-     # map = get_maps(row)
-      # map && cards.create!(
       row[:latlng][0] && row[:latlng][1] && cards.create!(
         name: row[:name],
         capital: row[:capital],
@@ -21,15 +19,10 @@ class Deck < ApplicationRecord
         alpha2Code: row[:alpha2Code],
         currencies: row[:currencies][0][:name],
         languages: languages(row[:languages]),
-        flag: row[:flag],
-        #map: map
+        flag: row[:flag]
       )
     end
   end
-
-  #def get_maps(row)
-  #  MapService.get_map({ lat: row[:latlng][0], lon: row[:latlng][1] }) if row[:latlng][0] && row[:latlng][1]
-  #end
 
   def languages(lang_arr)
     lang_string = lang_arr.map { |lang| lang[:name].capitalize }

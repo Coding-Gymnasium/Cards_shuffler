@@ -12,7 +12,6 @@ RSpec.describe 'Cards Show Page Features' do
       currencies: 'Afghan afghani',
       languages: 'Pashto, Uzbek, Turkmen',
       flag: 'https://restcountries.eu/data/afg.svg',
-      map: 'https://www.mapquestapi.com/staticmap/v5/map?key=g...',
       alpha2Code: 'AF'
     )
 

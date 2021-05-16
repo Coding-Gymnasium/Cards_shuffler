@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_14_165028) do
+ActiveRecord::Schema.define(version: 2021_05_13_164338) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,13 +22,12 @@ ActiveRecord::Schema.define(version: 2021_05_14_165028) do
     t.float "lat"
     t.float "lon"
     t.string "timezones"
+    t.string "alpha2Code"
     t.string "currencies"
     t.string "languages"
     t.string "flag"
-    t.string "map"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "alpha2Code"
   end
 
   create_table "deck_cards", force: :cascade do |t|

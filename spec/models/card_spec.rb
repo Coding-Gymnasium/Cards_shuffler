@@ -11,7 +11,6 @@ RSpec.describe Card, type: :model do
     it { should have_db_column :alpha2Code }
     it { should have_db_column :languages }
     it { should have_db_column :flag }
-    it { should have_db_column :map }
   end
 
   describe 'Relationships' do
@@ -30,7 +29,6 @@ RSpec.describe Card, type: :model do
         currencies: 'Afghan afghani',
         languages: 'Pashto, Uzbek, Turkmen',
         flag: 'https://restcountries.eu/data/afg.svg',
-        map: 'https://www.mapquestapi.com/staticmap/v5/map?key=g...',
         alpha2Code: 'AF'
       )
     end
