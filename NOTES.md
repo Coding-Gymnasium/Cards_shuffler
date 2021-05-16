@@ -85,23 +85,25 @@ Switching to an api versus the csv file. The file has some bad data and the lati
 #### Issue 8
 
 - [x] Add weather service
-- [ ] Create method to dynamically obtain current weather
+- [x] Create method to dynamically obtain current weather
 
 #### Issue 9
 
 ##### Add images api
 
-- [ ] Create image service
-- [ ] Add images collection to card
+- [x] Create image service
+- [x] Add images collection to card
 
 #### Issue 10
 
 ##### Create card show page
-
-- [ ] it has a map centered on the capital city
-- [ ] it has all the stats  included in the small card
-- [ ] it has images of the country
-- [ ] it has the capital city current weather
+- [x] there is show page for and individual card
+- [x] The page has the Country's name as title
+- [x] it has a map centered on the capital city
+- [x] it has all the stats  included in the small card
+- [x] it has images of the country
+- [x] it has the capital city current weather
+- [x] it has a flag
 
 #### Issue 11
 
