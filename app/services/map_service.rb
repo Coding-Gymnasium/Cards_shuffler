@@ -9,7 +9,7 @@ class MapService
 
     #JSON.parse(response.body, symbolize_names: true)
 
-    "https://www.mapquestapi.com/staticmap/v5/map?key=#{ENV["MAP_API_KEY"]}&center=#{coordinates[:lat]},#{coordinates[:lon]}&size=400,200@2x&zoom=3"
+    "https://www.mapquestapi.com/staticmap/v5/map?key=#{ENV["MAP_API_KEY"]}&locations=#{coordinates[:lat]},#{coordinates[:lon]}&size=400,200@2x&zoom=3"
   end
 
   #def self.conn

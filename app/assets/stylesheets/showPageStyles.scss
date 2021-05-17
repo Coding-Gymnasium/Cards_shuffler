@@ -1,0 +1,79 @@
+.header, .statsContainer {
+display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  padding: 1rem 5%;
+}
+
+.header, .statsContainer > * {
+  flex: 1 0 21%;
+}
+
+.header .title {
+  font-size: 2.5rem;
+}
+
+.header > * {
+flex: 1 1 50%;
+min-width: 35%;
+flex-basis: 350px;
+}
+
+//------------------------------------
+//------- Images
+//------------------------------------
+
+.images {
+  height: 40rem;
+  max-width: 90%;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+//------------------------------------
+//------- Cards (dataCard)
+//------------------------------------
+
+.dataCard:hover, .images img:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
+.dataCard {
+  min-width: 35%;
+  min-height: min-content;
+  padding: 2rem;
+  background: #f5f5f5;
+  flex-basis: 250px;
+  flex-shrink: 1;
+  flex-grow: 1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.dataCard ul {
+  text-align: left;
+}
+
+.dataCard img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+
