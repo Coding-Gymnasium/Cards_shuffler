@@ -1,7 +1,7 @@
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
 
-<h1>Discover The Capital Cities Of The World</h1>
+<div class='title' id='title'><h1>Explore The Countries Of The World</h1></div>
 
 <div id='featuredCard'> </div>
 
@@ -30,6 +30,8 @@
   function onClick(card) {
     document.getElementById('featuredCard').replaceChildren(card.cloneNode(true))
     var mapImage = document.getElementById('featuredCard').getElementsByTagName('img')[0]
+    var ele = document.getElementById('title');
+    window.scrollTo(ele.offsetLeft,ele.offsetTop);
   }
 </script>
 

@@ -17,7 +17,7 @@ RSpec.describe 'Index page features', type: :feature do
   it 'Cards include a Capital and its country and is listed in alphabetical order by country' do
     VCR.use_cassette('get_countries') do
       visit root_path
-      expect(page).to have_content('Discover The Capital Cities Of The World')
+      expect(page).to have_content('Explore The Countries Of The World')
 
       within(first('.card')) do
         expect(page).to have_content('Kabul')
@@ -43,15 +43,18 @@ RSpec.describe 'Index page features', type: :feature do
     end
   end
 
-  xit "When a visitor visits the home page can go to a card's show" do
+  it "When a visitor visits the home page can go to a card's show" do
     VCR.use_cassette('get_countries') do
       visit root_path
+    end
 
+    VCR.use_cassette('get_show_weather') do
+      card = Card.all.first.id
       within(first('.card')) do
         expect(page).to have_link('Details')
         click_link 'Details'
       end
-      expect(current_path).to eq(card_path(@card))
+      expect(current_path).to eq(card_path(card))
     end
   end
 end
