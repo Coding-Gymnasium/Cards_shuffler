@@ -26,13 +26,13 @@ RSpec.describe 'Cards Show Page Features' do
     end
 
     it 'It  has a map of the country' do
-      within('.countryMap') do
+      within('#countryMap') do
         expect(page).to have_content("#{@card.capital}")
       end
     end
 
     it 'It has a list of the country stats' do
-      within('.stats') do
+      within('#stats') do
         expect(page).to have_content('Country Stats')
         expect(page).to have_content('Name: Afghanistan')
         expect(page).to have_content('Population: 27657145')
@@ -45,7 +45,7 @@ RSpec.describe 'Cards Show Page Features' do
     end
 
     it 'It has the capital city weather' do
-      within('.capitalWeather') do
+      within('#capitalWeather') do
         expect(page).to have_content('Kabul Current Weather')
         expect(page).to have_content('Temperature')
         expect(page).to have_content('Minimum')
