@@ -49,6 +49,10 @@ body > * { text-align: center }
 // -------- Cards Container
 // --------------------------
 
+.title {
+  font-size: 1.5rem;
+}
+
 #featuredCard {
   max-width: 70%;
   margin: 2rem auto;
@@ -172,6 +176,30 @@ body > * { text-align: center }
   background: var(--lightgrey);
 }
 
+.navbar {
+	height: 80px;
+	width: 100%;
+	color: var(--clr-primary-800);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 2rem;
+	font-size: 1.5rem;
+}
+
+.navbar a:link, .navbar a:visited {
+	text-decoration: none;
+	transition: 0.3s all;
+  padding: 1rem;
+}
+
+.navbar a:hover {
+  background: var(--lightgrey);
+	color: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
 //-----------------------------
 //------ Media Queries
 //----------------------------
@@ -206,3 +234,4 @@ body > * { text-align: center }
   min-width: 25ch;
 }
 }
+
