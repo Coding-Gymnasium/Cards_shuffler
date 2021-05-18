@@ -11,7 +11,6 @@ class Card < ApplicationRecord
 
   def capital_weather
     weather = WeatherService.get_weather(capital, alpha2Code)
-
     {
       temp: weather[:main][:temp],
       temp_min: weather[:main][:temp_min],
