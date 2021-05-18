@@ -4,4 +4,4 @@ export default function onLoad() {
   featuredCard.replaceChildren(cards[0].cloneNode(true))
   var mapImage = document.getElementById('featuredCard').getElementsByTagName('img')[0]
 }
-window.addEventListener('load', onLoad)
+window.addEventListener('turbolinks:load', onLoad)

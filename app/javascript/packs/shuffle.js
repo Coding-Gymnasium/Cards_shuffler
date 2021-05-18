@@ -1,6 +1,6 @@
 import onLoad from './featuredCard.js'
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("turbolinks:load", ()=> {
 
 const cardContainer = document.getElementById("cards")
 const button = document.getElementById("shuffle")
