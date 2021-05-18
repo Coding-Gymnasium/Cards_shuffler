@@ -49,12 +49,16 @@ A visitor can find at a card's show page:
 
 A visitor can click 'Home' on the navigation bar and go back to the home page or refresh it if already there.
 
+  [back to top](#table-of-contents)
+  
 <hr/>
 
 ## Heroku Deployment
 
 Visit the deployed app: [explore-countries](https://explore-countries.herokuapp.com/)
 
+  [back to top](#table-of-contents)
+  
 <hr/>
 
 ## Specifications
@@ -62,6 +66,8 @@ Visit the deployed app: [explore-countries](https://explore-countries.herokuapp.
 * Ruby 3.0.0
 * Rails-6.1.3.2
 
+  [back to top](#table-of-contents)
+  
 <hr/>
 
 ## Installation
@@ -97,6 +103,8 @@ Images: [Pixabay](https://pixabay.com/service/about/api/)<br/>
 Countries: [Rest Countries](https://restcountries.eu/#api-endpoints-all)<br/>
 Maps: [MapQuest](https://developer.mapquest.com/documentation/)
 
+  [back to top](#table-of-contents)
+  
 <hr/>
 
 ## Testing
@@ -114,3 +122,5 @@ All tests should be passing.
 <p align='center'>
   <img src='terminal_sample_test_output.png'>
 </p>
+  
+  [back to top](#table-of-contents)
