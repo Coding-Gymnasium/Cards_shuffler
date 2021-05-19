@@ -1,7 +1,7 @@
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
 
-<div class='title' id='title'><h1>Explore The Countries Of The World</h1></div>
+<div class='title' id='title'><h1>Explore the Countries of the World</h1></div>
 
 <div id='featuredCard'> </div>
 
@@ -14,8 +14,8 @@
     <div class='card' id='card' onClick="onClick(this)">
       <%= image_tag(card.flag, :size => '300x200') %>
       <div class='description'>
-        <div class='title'><%= card.capital %></div>
-        <ul>Capital Of: <strong><%= card.name %></strong></ul>
+        <div class='title'><%= card.name %></div>
+        <ul>Capital: <strong><%= card.capital %></strong></ul>
         <ul>Population: <%= card.population %> </ul>
         <ul>Currency: <%= card.currencies %> </ul>
         <ul>Languages: <%= card.languages %></ul>
