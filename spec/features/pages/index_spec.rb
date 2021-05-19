@@ -17,7 +17,7 @@ RSpec.describe 'Index page features', type: :feature do
   it 'Cards include a Capital and its country and is listed in alphabetical order by country' do
     VCR.use_cassette('get_countries') do
       visit root_path
-      expect(page).to have_content('Explore The Countries Of The World')
+      expect(page).to have_content('Explore the Countries of the World')
 
       within(first('.card')) do
         expect(page).to have_content('Kabul')
