@@ -88,7 +88,8 @@ In the command line run the following commands in order:
 1. `$ rails db:{create,migrate}`
 2. `$ rails generate rspec:install`
 3. `$ bundle exec figaro install`
-5. `$ bundle install`
+4. `$ bundle install`
+5. `$ yarn install`
 
 ### Set Up APIs
 
