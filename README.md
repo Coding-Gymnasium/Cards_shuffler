@@ -76,9 +76,10 @@ Visit the deployed app: [explore-countries](https://explore-countries.herokuapp.
 
 Fork this Github repository: [Cards_shuffler](https://github.com/Coding-Gymnasium/Cards_shuffler)
 
-Clone your 'Sweater_weather' repository using SSH:
+Clone your 'Cards_shuffler' repository using SSH:
+  
 ```
-  $ git@github.com:Coding-Gymnasium/Cards_shuffler.git
+  $ git clone git@github.com:Coding-Gymnasium/Cards_shuffler.git
 ```
 
 ### Initial Installation
