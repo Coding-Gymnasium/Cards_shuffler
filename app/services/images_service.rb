@@ -13,7 +13,8 @@ class ImagesService
     json = JSON.parse(response.body, symbolize_names: true)
 
     {
-      images: json[:hits].sample(5),
+      images: json[:hits],
+      top5: json[:hits].max_by(5) { |image| image[:likes] },
       other:
         { source: 'pixabay.com', logo: 'https://pixabay.com/static/img/logo_square.png' }
     }
