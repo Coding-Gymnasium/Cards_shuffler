@@ -1,4 +1,5 @@
 class Card < ApplicationRecord
+  has_many_attached :images
 
   has_many :deck_cards
   has_many :decks, through: :deck_cards
