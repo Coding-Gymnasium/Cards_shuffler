@@ -6,7 +6,7 @@ class ImagesService
       f.params[:q] = country
       f.params[:image_type] = 'photo'
       f.params[:orientation] = 'horizontal'
-      f.params[:category] = 'travel'
+      f.params[:category] = 'buildings,nature,people'
       f.params[:order] = 'popular'
     end
 
