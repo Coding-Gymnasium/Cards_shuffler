@@ -11,7 +11,7 @@
 
 <!-- pictures --->
 <div class='images'>
-  <%= image_tag(@card.random_country_images(@card.name).sample) %>
+  <%= image_tag(@card.images.sample) %>
 </div>
 
 <!-- Stats ---> <!-- Weather ---> <!-- Map --->
@@ -39,3 +39,4 @@
     <%= image_tag(@card.country_map ) %>
   </div>
 </div>
+
