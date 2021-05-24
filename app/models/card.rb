@@ -1,6 +1,7 @@
+require 'down'
+
 class Card < ApplicationRecord
   has_many_attached :images
-
   has_many :deck_cards
   has_many :decks, through: :deck_cards
   validates :name, :population, :lat, :lon, :timezones, :currencies, :flag, presence: true
@@ -22,8 +23,15 @@ class Card < ApplicationRecord
     }
   end
 
-  def random_country_images(country)
-    ImagesService.get_images(country)[:images].map { |image| image[:largeImageURL] }
+  def top5_country_images(country)
+    if self.images.count <= 0
+      top5_images = ImagesService.get_images(country)[:top5].map { |image| image[:largeImageURL] }
+      top5_images.each do |url|
+        tempfile = Down.download(url)
+        count = 0
+        self.images.attach(io: tempfile, filename: "#{self.name}-#{count += 1}")
+      end
+    end
   end
 end
 
