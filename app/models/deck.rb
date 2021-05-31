@@ -8,18 +8,18 @@ class Deck < ApplicationRecord
   end
 
   def create_cards(data)
-    data.each do |row|
-      row[:latlng][0] && row[:latlng][1] && cards.create!(
-        name: row[:name],
-        capital: row[:capital],
-        population: row[:population],
-        lat: row[:latlng][0],
-        lon: row[:latlng][1],
-        timezones: current_time(row[:timezones][0]),
-        alpha2Code: row[:alpha2Code],
-        currencies: row[:currencies][0][:name],
-        languages: languages(row[:languages]),
-        flag: row[:flag]
+    data.each do |country_hash|
+      country_hash[:latlng][0] && country_hash[:latlng][1] && cards.create!(
+        name: country_hash[:name],
+        capital: country_hash[:capital],
+        population: country_hash[:population],
+        lat: country_hash[:latlng][0],
+        lon: country_hash[:latlng][1],
+        timezones: current_time(country_hash[:timezones][0]),
+        alpha2Code: country_hash[:alpha2Code],
+        currencies: country_hash[:currencies][0][:name],
+        languages: languages(country_hash[:languages]),
+        flag: country_hash[:flag]
       )
     end
   end
