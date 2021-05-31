@@ -6,8 +6,8 @@
 ![](https://img.shields.io/badge/Rails-6.1.3.2-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=4e03fc)
 ![](https://img.shields.io/badge/Ruby-3.0.0-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=fc0324)
 ![Badge](https://marcgrimme.github.io/simplecov-small-badge/badges/coverage_badge_total.svg)
-
-[![Maintainability](https://api.codeclimate.com/v1/badges/dc015164556e774d3078/maintainability)](https://codeclimate.com/github/nicorithner/Cards_shuffler/maintainability)
+  
+[![Maintainability](https://api.codeclimate.com/v1/badges/3beabd7dca15989c3cc5/maintainability)](https://codeclimate.com/github/Coding-Gymnasium/Cards_shuffler/maintainability)
 [![Coding-Gymnasium](https://circleci.com/gh/Coding-Gymnasium/Cards_shuffler.svg?style=svg)](<LINK>)
 
   <h3>Nico Rithner - 2021</h3>
