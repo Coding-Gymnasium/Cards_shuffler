@@ -29,7 +29,7 @@ class Card < ApplicationRecord
       top5_images.each do |url|
         tempfile = Down.download(url)
         count = 0
-        self.images.attach(io: tempfile, filename: "#{self.name}-#{count += 1}")
+        self.images.attach(io: File.open(tempfile), filename: "#{self.name}-#{count += 1}")
       end
     end
   end
