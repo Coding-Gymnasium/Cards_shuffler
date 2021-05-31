@@ -22,6 +22,7 @@
 ## Table of Contents
 - [Overview](#overview)
 - [Heroku Deployment](#heroku-deployment)
+- [AWS S3 - ActiveStorage](#images-storage)
 - [Specifications](#specifications)
 - [Installation](#installation)
 - [Testing](#testing)
@@ -56,6 +57,22 @@ A visitor can click 'Home' on the navigation bar and go back to the home page or
 ## Heroku Deployment
 
 Visit the deployed app: [explore-countries](https://explore-countries.herokuapp.com/)
+
+  [back to top](#table-of-contents)
+  
+<hr/>
+
+## Images Storage
+
+### AWS S3 and Active Storage
+
+To supply the card's show page with an image I used Pixabay's api.
+Pixabay doesn't allowed hot-linking so to use the images I had to store them on my own server. 
+
+I chose to use [Active Storage](https://edgeguides.rubyonrails.org/active_storage_overview.html) to store the images in AWS S3. For this I had to first download the image from the url and then upload it to S3.
+
+To use AWS S3 I installed the gem 'aws-sdk' and installed active storage in my app by running `bin/rails active_storage:install` and then the migrations. To download the image I used the gem ['down'](https://github.com/janko/down) which saves the image as a tempfile.
+
 
   [back to top](#table-of-contents)
   
