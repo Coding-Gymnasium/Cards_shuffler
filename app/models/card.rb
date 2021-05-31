@@ -31,6 +31,8 @@ class Card < ApplicationRecord
         count = 0
         self.images.attach(io: File.open(tempfile), filename: "#{self.name}-#{count += 1}")
       end
+    else
+      self.images
     end
   end
 end
