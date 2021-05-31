@@ -8,6 +8,7 @@ RSpec.describe ImagesService do
 
       expect(image).to be_a(Hash)
       expect(image[:images]).to be_an(Array)
+      expect(image[:top5]).to be_an(Array)
       expect(image[:other]).to be_a(Hash)
       expect(image[:images][0][:type]).to eq('photo')
       expect(image[:images][0][:user]).to be_a(String)
