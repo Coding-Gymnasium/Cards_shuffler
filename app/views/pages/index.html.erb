@@ -19,7 +19,7 @@
         <ul>Population: <%= card.population %> </ul>
         <ul>Currency: <%= card.currencies %> </ul>
         <ul>Languages: <%= card.languages %></ul>
-        <ul>Date & Time: <%= card.timezones %> </ul>
+        <ul>Date & Time: <%= card.current_time(card.timezones) %> </ul>
         <div class='detailsLink'><%= link_to 'Details', card_path(card), method: :get %></div>
       </div>
     </div>
