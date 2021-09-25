@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v1.4.1
+      - Faraday v1.8.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,11 +21,11 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Sat, 15 May 2021 04:03:11 GMT
+      - Sat, 25 Sep 2021 23:40:22 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '455'
+      - '486'
       Connection:
       - keep-alive
       X-Cache-Key:
@@ -39,6 +39,6 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"coord":{"lon":69.4167,"lat":34.5},"weather":[{"id":800,"main":"Clear","description":"clear
-        sky","icon":"01d"}],"base":"stations","main":{"temp":62.6,"feels_like":60.15,"temp_min":62.6,"temp_max":62.6,"pressure":1016,"humidity":34},"visibility":10000,"wind":{"speed":4.61,"deg":0},"clouds":{"all":0},"dt":1621051391,"sys":{"type":1,"id":7381,"country":"AF","sunrise":1621038002,"sunset":1621088250},"timezone":16200,"id":1138957,"name":"Kabul","cod":200}'
-  recorded_at: Sat, 15 May 2021 04:03:11 GMT
+        sky","icon":"01n"}],"base":"stations","main":{"temp":61.74,"feels_like":60.06,"temp_min":61.74,"temp_max":61.74,"pressure":1011,"humidity":52,"sea_level":1011,"grnd_level":811},"visibility":10000,"wind":{"speed":1.14,"deg":73,"gust":1.66},"clouds":{"all":0},"dt":1632613191,"sys":{"country":"AF","sunrise":1632618784,"sunset":1632662058},"timezone":16200,"id":1138957,"name":"Kabul","cod":200}'
+  recorded_at: Sat, 25 Sep 2021 23:40:22 GMT
 recorded_with: VCR 6.0.0

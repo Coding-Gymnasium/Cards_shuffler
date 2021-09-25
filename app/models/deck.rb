@@ -9,7 +9,7 @@ class Deck < ApplicationRecord
 
   def create_cards(data)
     data.each do |country_hash|
-      country_hash[:latlng][0] && country_hash[:latlng][1] && cards.create!(
+      country_hash.values.all? && cards.create!(
         name: country_hash[:name],
         capital: country_hash[:capital],
         population: country_hash[:population],
@@ -19,7 +19,7 @@ class Deck < ApplicationRecord
         alpha2Code: country_hash[:alpha2Code],
         currencies: country_hash[:currencies][0][:name],
         languages: languages(country_hash[:languages]),
-        flag: country_hash[:flag]
+        flag: country_hash[:flags][0]
       )
     end
   end

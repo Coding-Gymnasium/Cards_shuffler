@@ -17,8 +17,8 @@ RSpec.describe CountriesService do
       expect(countries[0][:currencies][0][:name]).to eq('Afghan afghani')
       expect(countries[0][:languages].count).to eq(3)
       expect(countries[0][:languages][0][:name]).to eq('Pashto')
-      expect(countries[0][:flag]).to be_a(String)
-      expect(countries[0][:flag]).to include('svg')
+      expect(countries[0][:flags][0]).to be_a(String)
+      expect(countries[0][:flags][0]).to include('svg')
     end
   end
 end
