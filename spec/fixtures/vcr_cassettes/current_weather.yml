@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v1.4.1
+      - Faraday v1.8.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,11 +21,11 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Sat, 15 May 2021 04:03:13 GMT
+      - Sat, 25 Sep 2021 23:40:25 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '481'
+      - '519'
       Connection:
       - keep-alive
       X-Cache-Key:
@@ -39,6 +39,6 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"coord":{"lon":10.7461,"lat":59.9127},"weather":[{"id":802,"main":"Clouds","description":"scattered
-        clouds","icon":"03d"}],"base":"stations","main":{"temp":50.16,"feels_like":48.97,"temp_min":48.99,"temp_max":52,"pressure":981,"humidity":87},"visibility":10000,"wind":{"speed":4.14,"deg":25,"gust":15.46},"clouds":{"all":44},"dt":1621051393,"sys":{"type":3,"id":2009047,"country":"NO","sunrise":1621046380,"sunset":1621108034},"timezone":7200,"id":3143244,"name":"Oslo","cod":200}'
-  recorded_at: Sat, 15 May 2021 04:03:13 GMT
+        clouds","icon":"03n"}],"base":"stations","main":{"temp":46.18,"feels_like":46.18,"temp_min":44.94,"temp_max":48.42,"pressure":1016,"humidity":1,"sea_level":1016,"grnd_level":1012},"visibility":10000,"wind":{"speed":1.63,"deg":176,"gust":1.83},"clouds":{"all":25},"dt":1632613150,"sys":{"type":2,"id":2007693,"country":"NO","sunrise":1632633043,"sunset":1632675954},"timezone":7200,"id":3143244,"name":"Oslo","cod":200}'
+  recorded_at: Sat, 25 Sep 2021 23:40:25 GMT
 recorded_with: VCR 6.0.0
