@@ -22,7 +22,6 @@ RSpec.describe 'Index page features', type: :feature do
       within(first('.card')) do
         expect(page).to have_content('Kabul')
         expect(page).to have_content('Afghanistan')
-        expect(page).to have_content('Population: 27657145')
         expect(page).to have_content('Currency: Afghan afghani')
         expect(page).to have_content('Languages: Pashto, Uzbek, Turkmen')
         expect(page).to have_content('Date & Time:')

@@ -19,7 +19,7 @@ class Deck < ApplicationRecord
         alpha2Code: country_hash[:alpha2Code],
         currencies: country_hash[:currencies][0][:name],
         languages: languages(country_hash[:languages]),
-        flag: country_hash[:flags][0]
+        flag: country_hash[:flags][:png]
       )
     end
   end
